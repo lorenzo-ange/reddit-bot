@@ -7,20 +7,15 @@ import java.util.*
 class NotificationSender {
     private val props = Props.retrieve()
 
-    private fun sendTwilioSms(accountSid: String, authToken: String, to: String, from: String, body: String): Message {
-
-        val client = TwilioRestClient(accountSid, authToken)
+    fun send(text: String): Message {
+        val client = TwilioRestClient(props.twilioAccountSid, props.twilioAuthToken)
 
         val params = ArrayList<NameValuePair>()
-        params.add(BasicNameValuePair("To", to))
-        params.add(BasicNameValuePair("From", from))
-        params.add(BasicNameValuePair("Body", body))
+        params.add(BasicNameValuePair("To", props.myPhone))
+        params.add(BasicNameValuePair("From", props.twilioTrialPhone))
+        params.add(BasicNameValuePair("Body", text))
 
         val messageFactory = client.account.getMessageFactory()
         return messageFactory.create(params)
-    }
-
-    fun send(text: String) {
-        sendTwilioSms(props.twilioAccountSid, props.twilioAuthToken, props.myPhone, props.twilioTrialPhone, text)
     }
 }
