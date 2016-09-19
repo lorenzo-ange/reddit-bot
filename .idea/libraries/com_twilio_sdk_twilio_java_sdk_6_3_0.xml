@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="com.twilio.sdk:twilio-java-sdk:6.3.0" type="repository">
+    <properties maven-id="com.twilio.sdk:twilio-java-sdk:6.3.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/twilio-java-sdk-6.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpclient-4.2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore-4.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-simple-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-asl-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-mapper-asl-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jjwt-0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/twilio-java-sdk-6.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
